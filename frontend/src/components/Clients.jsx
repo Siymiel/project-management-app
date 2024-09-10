@@ -8,7 +8,7 @@ import Spinner from "./Spinner";
 const Clients = () => {
   const { loading, error, data } = useQuery(GET_CLIENTS);
 
-  if (loading) return <Spinner />;
+  if (loading) return null;
   if (error) return <p>Error : {error.message}</p>;
 
 
